@@ -26,6 +26,11 @@ public class RandomChar {
 		upperList.addAll(alUpper);
 		numbsList.addAll(alNumbs);
 	}
+	public String returnThreeNumbers(){
+		Random c =new Random();
+		String temp = numbsList.get(c.nextInt(numbsList.size())).toString()+numbsList.get(c.nextInt(numbsList.size())).toString()+numbsList.get(c.nextInt(numbsList.size())).toString();
+		return temp;
+	}
 	public String returnThreeChar(){
 		Random c =new Random();
 		String temp = lcharTemp.get(c.nextInt(lcharTemp.size())).toString()+lcharTemp.get(c.nextInt(lcharTemp.size())).toString()+lcharTemp.get(c.nextInt(lcharTemp.size())).toString();
